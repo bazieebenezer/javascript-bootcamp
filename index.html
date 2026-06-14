@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attestation JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/certificate.svg">
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="badge">Aorte Learn Bootcamp</div>
+            <div class="header">
+                <i data-lucide="party-popper" class="icon-popper"></i>
+            </div>
+            <h1>Certifiez votre talent JavaScript</h1>
+            <p class="description">Validez votre initiation au Bootcamp JavaScript Aorte.</p>
+            
+            <form id="attestationForm">
+                <div class="input-group">
+                    <label for="fullName">Nom complet</label>
+                    <div class="input-wrapper">
+                        <i data-lucide="circle-user-round" class="input-icon"></i>
+                        <input type="text" id="fullName" placeholder="Entrez votre nom complet" required>
+                    </div>
+                </div>
+                <button type="submit" id="generateBtn">
+                    <i data-lucide="file-text" class="btn-icon"></i>
+                    <span class="btn-text">Obtenir mon attestation</span>
+                </button>
+            </form>
+            
+            <p class="footer">Votre attestation sera générée automatiquement au format PDF.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
