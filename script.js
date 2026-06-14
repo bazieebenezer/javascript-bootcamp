@@ -92,7 +92,7 @@ document.getElementById('attestationForm').addEventListener('submit', async func
     // --- FOOTER ---
     doc.setFontSize(10);
     doc.setTextColor(161, 161, 170);
-    doc.text("www.aorte.africa", centerX, 192, { align: "center" });
+    doc.text("https://aorte.africa", centerX, 192, { align: "center" });
 
     // Sauvegarde du fichier
     doc.save(`Attestation_${name.replace(/\s+/g, '_')}.pdf`);
